@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cluster1-abc-dev
+  labels:
+    eks-project: cluster1-abc-dev
+    envName: dev
+    provider: psre-flux
+    eks-project-scope: truemoney
+    elbv2.k8s.aws/pod-readiness-gate-inject: enabled
+    cert-manager.io/disable-validation: 'true'

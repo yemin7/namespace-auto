@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-resources
+  namespace: cluster1-abc-dev
+spec:
+  hard:
+    limits.cpu: "3000m"
+    limits.memory: "2048Mi"
+  scopes:
+  - NotTerminating
